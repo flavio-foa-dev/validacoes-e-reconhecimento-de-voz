@@ -1,1 +1,1 @@
-# validaces-e-reconhecimento-de-voz
+# validacoes-e-reconhecimento-de-voz
