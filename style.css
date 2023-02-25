@@ -26,6 +26,7 @@ h1 {
 
 h2 {
   font-size: 2em;
+  margin-top: 20px;
 }
 
 h3 {
@@ -64,4 +65,8 @@ p {
 .btn-play:hover {
   color: rgb(255, 255, 255);
   background-color: rgb(64, 43, 187);
+}
+
+.b{
+  background-color: black
 }

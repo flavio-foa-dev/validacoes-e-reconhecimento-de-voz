@@ -1,6 +1,16 @@
 function ischuteValid(value) {
   const parseValue = parseInt(value, 10);
 
+  if (value === "game over"){
+    document.body.innerHTML = `
+    <h3>GAME OVER</h3>
+    <h2>O numero era ${numberSecret}</h2>
+    <button class="btn-play" id="btn">Jogar</button>
+    `
+    document.body.classList.add('b')
+    return
+  }
+
   if (valueValid(parseValue)) {
     elementChute.innerHTML += `<p> valor invalido! </p>`;
     return
