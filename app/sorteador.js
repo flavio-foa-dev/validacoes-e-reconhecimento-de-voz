@@ -1,6 +1,5 @@
 const menorValor = document.getElementById('number-smaller');
 const maiorValor = document.getElementById('number-bigger');
-const dysplayed = document.querySelector('.box');
 const smaller = 1;
 const bigger = 1000;
 const numberSecret = sorteador();

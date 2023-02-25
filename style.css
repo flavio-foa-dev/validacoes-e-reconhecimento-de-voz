@@ -24,9 +24,20 @@ h1 {
   font-size: 4.5em;
 }
 
+h2 {
+  font-size: 2em;
+}
+
 h3 {
   font-size: 3.5em;
   margin-top: 20px;
+}
+
+p {
+  font-size: 35px;
+  color: #4b424a;
+  margin-bottom: 20px;
+
 }
 
 .message {
