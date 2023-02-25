@@ -6,3 +6,8 @@ A Web Speech API foi lançada no final de 2012, e possibilita que as pessoas des
 - https://www.sitepoint.com/introducing-web-speech-api/
 
 - padding-top, padding-right, padding-bottom, padding-left.
+
+- método window.location.reload  Em JavaScript,
+-  "window" representa a janela aberta no navegador.
+-  "location", nessa linguagem, contém informações sobre a URL atual.
+-  "reload()" é usado para recarregar a página.
