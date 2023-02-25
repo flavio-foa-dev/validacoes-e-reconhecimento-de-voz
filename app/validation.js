@@ -4,10 +4,12 @@ function ischuteValid(value) {
 
   if (valueValid(parseValue)) {
     elementChute.innerHTML = `<p> valor invalido! </p>`;
+    return
   }
 
   if (valueRange(parseValue)){
     elementChute.innerHTML = '<p> chute fora do range</p>'
+    return
   }
 
   if (parseValue === numberSecret){
@@ -15,7 +17,16 @@ function ischuteValid(value) {
     <h2>Voce acertou o numero secreto!</h2>
     <h3>O numero era ${numberSecret}</h3>
     `;
+  } else if (parseValue > numberSecret) {
+    elementChute.innerHTML = `
+    <div id=""> o numero e menor <i class="fa-sharp fa-solid fa-circle-down"></i></div>
+    `;
+  }else {
+    elementChute.innerHTML =  `
+    <div id=""> o numero e maior <i class="fa-sharp fa-solid fa-circle-up"></i></div>
+    `;
   }
+
 
 }
 

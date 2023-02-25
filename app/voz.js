@@ -1,19 +1,16 @@
-const elementChute = document.querySelector('#chute')
+const elementChute = document.querySelector('#chute');
 window.SpeechRecognition = window.SpeechRecognition || webkitSpeechRecognition;
 
-const recognition = new SpeechRecognition()
-recognition.lang = 'pt-BR'
-recognition.start()
+const recognition = new SpeechRecognition();
+recognition.lang = 'pt-BR';
+recognition.start();
 
-
-
-
-recognition.addEventListener('result', onSpeak)
+recognition.addEventListener('result', onSpeak);
 
 function onSpeak(e) {
-const chute = e.results[0][0].transcript
-ischuteValid(chute)
-showChute(chute)
+const chute = e.results[0][0].transcript;
+ischuteValid(chute);
+showChute(chute);
 }
 
 function showChute(chute) {
@@ -23,3 +20,4 @@ function showChute(chute) {
   `;
 }
 
+recognition.addEventListener('end', () => recognition.start());
