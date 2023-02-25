@@ -9,12 +9,12 @@ recognition.addEventListener('result', onSpeak);
 
 function onSpeak(e) {
 const chute = e.results[0][0].transcript;
-ischuteValid(chute);
 showChute(chute);
+ischuteValid(chute);
 }
 
 function showChute(chute) {
-  elementChute.innerHTML += `
+  elementChute.innerHTML = `
     <div>Voce disse.</div>
     <span class="box">${chute}</span>
   `;
